@@ -21,6 +21,8 @@ test.describe('W3Schools SQL Demo Database', () => {
     expect(cellCount).toBeGreaterThan(0);
     for (let i = 0; i < cellCount; i++) {
       const text = (await dataCells.nth(i).innerText()).trim();
+      console.log(text);
+      
       expect(text.length).toBeGreaterThan(0);
     }
   });

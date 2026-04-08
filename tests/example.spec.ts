@@ -15,7 +15,7 @@ const response = await request.post('https://conduit-api.bondaracademy.com/api/a
   },
   data: {
     "article": {
-      "title": "TEST TEST123",
+      "title": "TEST",
       "description": "TEST TESing123",
       "body": "Body updated123",
       "tagList": []}
@@ -23,4 +23,37 @@ const response = await request.post('https://conduit-api.bondaracademy.com/api/a
 })
  const respnceoject = await response.json();
  console.log(respnceoject);
+});
+test('PUT', async ({ request }) => {
+//  const response = await request.get('https://playwright.dev/');
+const response = await request.put('https://conduit-api.bondaracademy.com/api/articles/', {
+  headers: {
+   Authorization: 'Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDQzNn0sImlhdCI6MTc3NDY2Nzg3OCwiZXhwIjoxNzc5ODUxODc4fQ.vBQtpR9paaVhUXL2G4VXfHg-QnRtgXDiXEA8WZSqc9U'
+  },
+  data: {
+    "article": {
+      "title": "PUT TEST1234",
+      "description": "PUT TET1234",
+      "body": "Body updated123",
+      "tagList": []}
+  }
+})
+//  const respnceoject = await response.json();
+//  console.log(respnceoject);
+});
+test('DELETE', async ({ request }) => {
+//  const response = await request.get('https://playwright.dev/');
+const response = await request.delete('https://conduit-api.bondaracademy.com/api/articles/', {
+  headers: {
+   Authorization: 'Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MDQzNn0sImlhdCI6MTc3NDY2Nzg3OCwiZXhwIjoxNzc5ODUxODc4fQ.vBQtpR9paaVhUXL2G4VXfHg-QnRtgXDiXEA8WZSqc9U'
+  },
+  data: {
+    "article": {
+      "title": "TEST",
+      "description": "TEST TESing123",
+      "body": "Body updated123",
+      "tagList": []}
+  }
+})
+
 });
