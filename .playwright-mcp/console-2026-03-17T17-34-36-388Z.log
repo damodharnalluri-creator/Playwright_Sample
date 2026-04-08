@@ -1,0 +1,11 @@
+[     306ms] [WARNING] JQMIGRATE: jQuery.fn.live() is deprecated @ https://freecrm.b-cdn.net/js/core.min.js:0
+[     405ms] [WARNING] JQMIGRATE: jQuery.parseJSON requires a valid JSON string @ https://freecrm.b-cdn.net/js/core.min.js:0
+[     414ms] [WARNING] JQMIGRATE: jQuery.fn.andSelf() replaced by jQuery.fn.addBack() @ https://freecrm.b-cdn.net/js/core.min.js:0
+[   30620ms] [ERROR] Not signed in with the identity provider. @ https://ui.freecrm.com/:0
+[   35892ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://ui.freecrm.com/assets/js/index.js:187
+[  361256ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.postMessage call. @ https://accounts.google.com/gsi/client:354
+[  361257ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.postMessage call. @ https://accounts.google.com/gsi/client:354
+[  389146ms] [WARNING] [GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used. @ https://ui.freecrm.com/assets/js/index.js:187
+[  389256ms] [ERROR] Error retrieving a token. @ https://ui.freecrm.com/:0
+[  399935ms] [ERROR] User declined or dismissed prompt. API exponential cool down triggered. @ https://ui.freecrm.com/:0
+[  399936ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://ui.freecrm.com/assets/js/index.js:187
