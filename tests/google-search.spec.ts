@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import * as assert_auto from './Play_assertion/play_assertion.ts';
-test.skip('1.Signup verification - FreeCRM', async ({ page }) => {
+test('1.Signup verification - FreeCRM', async ({ page }) => {
   // Navigate to FreeCRM
   await page.goto('/');
   await page.waitForLoadState('networkidle');
@@ -69,5 +69,5 @@ test('2.Sign in to Free CRM using Google', async ({ page }, testinfo) => {
   await page.getByText('Accounts', { exact: true }).click();
   //await page.locator('input[name="image"]').click();
   // await page.locator('input[name="image"]').setInputFiles('134182386691373312.jpg');
-   await page.locator('input[name="image"]').setInputFiles('134182386691373312.jpg');
+  // await page.locator('input[name="image"]').setInputFiles('134182386691373312.jpg');
 });
