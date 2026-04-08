@@ -1,13 +1,16 @@
 name: Playwright Tests
 on:
+  # Do not trigger this workflow on direct pushes to `main`.
   push:
-    branches: [ main, master ]
+    branches-ignore: [ main ]
   pull_request:
     branches: [ main, master ]
   schedule:
     # Runs daily at 12:30 AM Central Standard Time (CST = UTC-6).
     # GitHub Actions cron uses UTC, so 12:30 AM CST is 06:30 UTC.
     - cron: '30 6 * * *'
+  # Allow manual runs from the Actions UI
+  workflow_dispatch: {}
 jobs:
   test:
     timeout-minutes: 60
